@@ -1,0 +1,21 @@
+11/08/2021
+
+Fait
+
+-Delimitation des balises sémantiques sur les 5 pages à l'aide de paint3d.
+
+-Organisation sémantique de la page acceuil
+
+A faire 
+
+-Organisation général du Header
+
+21/08/2021
+
+Fait 
+
+-Mise en place des éléments du header et du main en html
+A faire :
+
+-Le footer
+-Mettre en page le header en desktop (css)

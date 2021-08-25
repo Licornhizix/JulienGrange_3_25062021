@@ -1,0 +1,48 @@
+
+
+
+/*header*/
+
+header {
+
+	background-color: skyblue;
+	display: flex;
+	justify-content: center;
+
+}
+
+div > h2 {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.logo {
+	font-family: 'Shrikhand', cursive;
+	font-size: 80px;
+	display: flex;
+	justify-content: center;
+
+}
+
+.localisation {
+	background-color: grey;
+	display: flex;
+	justify-content: center;
+}
+
+ div > h3, p {
+display: flex;
+justify-content: center;
+
+}
+
+.button {
+display: flex;
+justify-content: center;
+
+}
+
+.hotel-info {
+width: 100%;
+
+}
