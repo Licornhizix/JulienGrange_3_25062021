@@ -19,3 +19,16 @@ A faire :
 
 -Le footer
 -Mettre en page le header en desktop (css)
+
+26/8/2021
+
+A faire:
+
+-Crée le footer
+-Crée le bouton "explorer nos restaurants"
+
+Fait
+
+-Remettre le titre en mode mobile (taille adaptée)
+
+-mettre le gris adapté à localisation avec un effet d'ombre en haut
