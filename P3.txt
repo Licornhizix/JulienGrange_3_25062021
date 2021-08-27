@@ -24,8 +24,8 @@ A faire :
 
 A faire:
 
--Créer le footer
 -Créer toutes les pages
+-mettre de l'ordre dans le code css
 
 Fait
 
@@ -33,3 +33,4 @@ Fait
 
 -mettre le gris adapté à localisation avec un effet d'ombre en haut
 -Crée le bouton "explorer nos restaurants"
+-Créer le footer
