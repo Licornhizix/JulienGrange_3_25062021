@@ -29,7 +29,7 @@ div > h2 {
 
 .header-bottom {
 
-background-image: linear-gradient(to top, #EDEDEC, white);
+	background-image: linear-gradient(to top, #EDEDEC, white);
 
 }
 
@@ -43,53 +43,62 @@ background-image: linear-gradient(to top, #EDEDEC, white);
 	font-family: 'Roboto', sans-serif;
 }
 
- div > h3, p {
-display: flex;
-justify-content: center;
-font-family: 'Roboto', sans-serif;
-text-align: center;
+div > h3, p {
+	display: flex;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
 }
 
 h3 {
-font-size: 25px;
-font-weight: 900;
-margin-top: 0;
-margin-bottom: 0;
-padding-top: 25px;
-padding-bottom: 25px;
+	font-size: 25px;
+	font-weight: 900;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 p {
-color: gray;
-font-size: 20px;
+	color: gray;
+	font-size: 20px;
 }
 
 .button {
-display: flex;
-justify-content: center;
-padding-bottom: 15%;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 15%;
 
 }
 
 .header-top {
-width: 100%;
+	width: 100%;
 
 }
 
 #gps {
-margin-right: 5%;
+	margin-right: 5%;
 
 }
 
 div button {
- background-color: #9356DC;
- background-image: linear-gradient(to left, #9356DC, #FF79DA);
- border: none;
- color: white;
- border-radius: 25px;
- height: 50px;
- width: 60%;
- font-size: 16px;
- box-shadow: 0px 2px 10px 1px grey;
+	background-color: #9356DC;
+	background-image: linear-gradient(to left, #9356DC, #FF79DA);
+	border: none;
+	color: white;
+	border-radius: 25px;
+	height: 50px;
+	width: 60%;
+	font-size: 16px;
+	box-shadow: 0px 2px 10px 1px grey;
 
+}
+
+div button:hover {
+	color: #deebff;
+	background-color: #purple;
+	cursor: pointer;
+	border-radius: 25px;
+	height: 50px;
+	box-shadow: 0px 2px 10px 3px grey;
 }
