@@ -34,3 +34,13 @@ Fait
 -mettre le gris adapté à localisation avec un effet d'ombre en haut
 -Crée le bouton "explorer nos restaurants"
 -Créer le footer
+
+06/09/2021
+
+A faire: ajuster les photos dans acceuil.html
+Developper l'esquisse de l'autre page
+
+Fait: 
+
+-Ajout des puces avec numéros dans "Fonctionnement"
+-Hoover sur les icones dans fonctionnement (violet)
