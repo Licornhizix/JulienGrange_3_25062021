@@ -44,3 +44,11 @@ Fait:
 
 -Ajout des puces avec numéros dans "Fonctionnement"
 -Hoover sur les icones dans fonctionnement (violet)
+
+08/09/2021
+
+Fait: 
+-page acceuil (mode mobile)
+ question mentorat :
+1. Pourquoi les autres pages débordent du cadre en responsive mobile?
+2. Comment positionner "nouveau"?

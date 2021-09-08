@@ -19,7 +19,7 @@ header {
 }
 
 
-.logo-header {
+.logo-header, .menu-title {
 	font-family: 'Shrikhand', cursive;
 	font-size: 30px;
 	display: flex;
@@ -79,6 +79,7 @@ p {
 	width: 100%;
 
 }
+
 
 
 .header-button button {
@@ -232,6 +233,13 @@ h5 {
 }
 
 
+/* Menus*/
+.menu-title {
+
+	display: flex;
+	justify-content: flex-start;
+}
+
 /* footer*/
 
 footer {
@@ -264,3 +272,4 @@ img {
 	border-top-right-radius: 15px;
 	object-fit: cover;
 }
+
