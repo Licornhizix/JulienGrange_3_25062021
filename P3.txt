@@ -52,3 +52,35 @@ Fait:
  question mentorat :
 1. Pourquoi les autres pages débordent du cadre en responsive mobile?
 2. Comment positionner "nouveau"?
+
+A faire: 
+
+renommer les pages html en fonction des noms de menus
+Crée le premier bouton de la page menu
+aligner le texte en vertical dans le bouton
+
+
+
+fait
+-ajuster le "heart" dans menu1
+
+10/09/2021
+
+Fait:Mise en place des nombreux boutons
+ Mise en place du bouton violet en bas
+ 
+
+11/09/2021
+
+fait: 
+
+-renomer les pages
+-reproduire les 3 autres pages "menu"
+-les relier à acceuil
+-écrire les textes
+
+a faire :
+
+-ajouter une classe "plat-title" pour reajuster un overflox avec point en cas de dépassement.
+-etudier les effets pour le heart.
+-activer la fleche retour arrière

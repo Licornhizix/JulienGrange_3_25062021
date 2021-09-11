@@ -1,7 +1,8 @@
 /*common-settings*/
-.fas,
-.icon {
-	margin-right: 5%;
+.fas, .far {
+
+	font-size: 20px;
+	margin-right: 2%;
 }
 
 /*header*/
@@ -13,13 +14,26 @@ body {
 header {
 
 	display: flex;
-	justify-content: center;
 
+	flex-direction: column;
+	justify-items: flex-start;
+	position: relative;
+}
 
+header::before {
+  content: "";
+  position: absolute;
+  background-color: #EDEDEC;
+  bottom: -5px;
+  height: 30px;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  box-shadow: 0 -10px 0 0 #EDEDEC;
 }
 
 
-.logo-header, .menu-title {
+.logo-header, .logo-header-menu, .menu-title {
 	font-family: 'Shrikhand', cursive;
 	font-size: 30px;
 	display: flex;
@@ -28,6 +42,19 @@ header {
 	padding-bottom: 0;
 	margin-top: 0;
 	margin-bottom: 0;
+
+}
+
+.logo-header-menu {
+	margin-left: 15%;
+
+}
+
+.header-top-menu {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
 
 }
 
@@ -47,14 +74,16 @@ header {
 	padding: 15px;
 }
 
-div>h3,
+div>h2,
 p {
 	display: flex;
-	justify-content: center;
 	text-align: center;
+
 }
 
-h3 {
+
+
+h2 {
 	font-size: 24px;
 	font-weight: 900;
 	margin-top: 0;
@@ -89,9 +118,12 @@ p {
 	color: white;
 	border-radius: 25px;
 	height: 50px;
-	width: 60%;
+	width: 55%;
 	font-size: 16px;
 	box-shadow: 0px 2px 10px 1px lightgrey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 
 }
@@ -185,21 +217,18 @@ a {
 	text-decoration: none;
 }
 
-h4, h5 {
-
-	font-size: 18px;
-}
-
 h4 {
 
+	font-size: 16px;
+	margin-top: 3px;
+	font-weight: 100;
+}
+
+h3 {
+	font-size: 20p;
 	margin-bottom: 0;
 }
 
-h5 {
-	margin-top: 3px;
-	font-weight: 100;
-
-}
 .icon-score {
 
 	display: flex;
@@ -234,11 +263,97 @@ h5 {
 
 
 /* Menus*/
-.menu-title {
+.main-background {
+	background-color: #EDEDEC;
+	padding-bottom: 5%;
 
+}
+.menu-name {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 3%;
+
+}
+
+.menu-title {
 	display: flex;
 	justify-content: flex-start;
+	width: 100%;
 }
+
+div > h2 {
+	display: flex;
+	justify-content: flex-start;
+	
+}
+
+.plat-type {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-transform: uppercase;
+} 
+
+.menu-part {
+
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 5%;
+	color: dimgrey;
+}
+
+
+.plat-type > button {
+	
+	background-color: white;
+	border-radius: 20px;
+	height: 70px;
+	width: 95%;
+	font-size: 16px;
+	box-shadow: 0px 2px 10px 1px lightgrey;
+	border: none;
+	font-weight: 500;
+	margin-bottom: 5%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	
+
+}
+.plat-type > button:hover {
+	/* color: #9356DC;*/
+
+	background-color: #fdeeff;
+	cursor: pointer;
+	border-radius: 20px;
+	height: 70px;
+	width: 95%;
+	box-shadow: 0px 2px 10px 3px lightgrey;
+}
+
+
+
+.plat-view {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	white-space: nowrap;
+
+}	
+
+.plat-price {
+
+	font-weight: bold;
+}
+
+.button-commander {
+	padding-top: 10%;
+}
+
+
 
 /* footer*/
 
@@ -249,8 +364,10 @@ footer {
 	line-height: 25px;
 	padding-bottom: 3%;
 	padding-top: 3%;
-}
+	margin-top: 0;
 
+
+}
 .logo-footer {
 	font-family: 'Shrikhand', cursive;
 	font-size: 20px;
