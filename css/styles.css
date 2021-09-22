@@ -1,9 +1,92 @@
 /*common-settings*/
-.fas, .far {
+	.far {
 
 	font-size: 20px;
 	margin-right: 2%;
 }
+.like-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all 0.5s;
+    opacity: 0;
+    z-index: 2;
+
+  }
+  .fa-heart{
+
+  		left: 85%;
+      position: absolute;
+      font-size: 25px;
+      -webkit-text-stroke: 2px #e5e5e5;
+      color: #EDEDEC;
+      
+      -webkit-text-stroke: 1px black;
+  }
+
+  .like-btn:checked + .fa-heart{
+      color: #9356DC;
+      -webkit-text-stroke: 0px black;
+      transition: 1.5s ease-in-out;
+      
+    }
+
+    #cover-spin {
+    position:fixed;
+    width:100%;
+    left:20%;right:20%;top:0;bottom:0;
+    
+    z-index:1;
+
+    
+}
+
+@-webkit-keyframes spin {
+	from {-webkit-transform:rotate(0deg);}
+	to {-webkit-transform:rotate(360deg);}
+}
+
+@keyframes spin {
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
+}
+
+#cover-spin::before {
+    content:'';
+    display:block;
+    position:absolute;
+    left:48%;top:40%;
+    width:40px;height:40px;
+    border-style:solid;
+    border-color:black;
+    border-top-color:transparent;
+    border-width: 4px;
+    border-radius:50%;
+    -webkit-animation: spin .8s linear 3;
+    animation: spin .8s linear 3;
+}
+
+  
+#cover-spin::before {
+    content:'';
+    display:block;
+    position:absolute;
+    left:48%;top:40%;
+    width:40px;height:40px;
+    border-style:solid;
+    border-color:black;
+    border-top-color:transparent;
+    border-width: 4px;
+    border-radius:50%;
+    -webkit-animation: spin .8s linear 3;
+    animation: spin .8s linear 3;
+}
+
+
 
 /*header*/
 
@@ -11,31 +94,32 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+
+
 header {
 
 	display: flex;
-
 	flex-direction: column;
 	justify-items: flex-start;
 	position: relative;
 }
 
 header::before {
-  content: "";
-  position: absolute;
-  background-color: #EDEDEC;
-  bottom: -5px;
-  height: 30px;
-  width: 100%;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  box-shadow: 0 -10px 0 0 #EDEDEC;
+	content: "";
+	position: absolute;
+	background-color: #EDEDEC;
+	bottom: -5px;
+	height: 30px;
+	width: 100%;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	
 }
 
 
 .logo-header, .logo-header-menu, .menu-title {
 	font-family: 'Shrikhand', cursive;
-	font-size: 30px;
+	font-size: 25px;
 	display: flex;
 	justify-content: center;
 	padding-top: 0;
@@ -46,17 +130,20 @@ header::before {
 }
 
 .logo-header-menu {
-	margin-left: 15%;
+	width: 100%;
 
 }
 
 .header-top-menu {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 
 
+
 }
+
+
 
 .header-bottom {
 
@@ -74,6 +161,11 @@ header::before {
 	padding: 15px;
 }
 
+.icon {
+	font-size: 20px;
+	margin-right: 3%;
+}
+
 div>h2,
 p {
 	display: flex;
@@ -84,7 +176,7 @@ p {
 
 
 h2 {
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 900;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -100,7 +192,9 @@ p {
 .button {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	padding-bottom: 10%;
+	position: relative;
 
 }
 
@@ -108,8 +202,6 @@ p {
 	width: 100%;
 
 }
-
-
 
 .header-button button {
 	background-color: #9356DC;
@@ -135,6 +227,7 @@ p {
 	border-radius: 25px;
 	height: 50px;
 	box-shadow: 0px 2px 10px 3px grey;
+	transition: .5s
 }
 
 /* fonctionnement*/
@@ -150,6 +243,9 @@ p {
 	box-shadow: 0px 2px 10px 1px lightgrey;
 	border: none;
 	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .fonctionnement__section button:hover {
@@ -161,17 +257,23 @@ p {
 	height: 70px;
 	width: 90%;
 	box-shadow: 0px 2px 10px 3px lightgrey;
+	transition: .5s
 }
 
 /* modifie*/
 .fonctionnement__section button:hover .fonction-icon {
 	color: #9356DC;
+	transition: .5s ease-in-out;
 }
 
+.fonction-icon {
+
+	margin-right: 3%;
+}
 
 .fonction-number {
 	
-	margin-left: -6%;
+	right: 90%;
 	padding: 7px 7px;
 	border-radius: 50%;
 	background-color: #9356DC;
@@ -182,11 +284,15 @@ p {
 	padding: 5px;
 	line-height: 16px;
 	text-align: center;
-	display: inline-block;
-	float: left;
-	overflow: auto;
+	position: absolute;
+	
 }
 /* main*/
+
+main {
+
+	background-color: #EDEDEC;
+}
 
 .restaurants-list {
 	display: grid;
@@ -199,8 +305,10 @@ p {
 
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin-left: 5%;
 	margin-right: 5%;
+	height: 70px;
 }
 
 .restaurants-cards-info {
@@ -215,6 +323,7 @@ a {
 
 	color: black;
 	text-decoration: none;
+	position: relative;
 }
 
 h4 {
@@ -235,32 +344,19 @@ h3 {
 	align-items: center;
 	font-size: 20px;
 }
-#nouveau1 {
+.nouveau {
 
 	position: absolute;
-	bottom: -34%;
-	left: 75%;
-	z-index: 1;
+	left: 76%;
+	font-size: 15px;
+	top: -1200%;
 	background-color: #99E2D0;
 	color: green;
-	padding: 2%;
+	padding: 10px;
+	
 	border-radius: 5px;
 
 }
-
-#nouveau2 {
-
-	position: absolute;
-	bottom: -87%;
-	left: 75%;
-	z-index: 1;
-	background-color: #99E2D0;
-	color: green;
-	padding: 2%;
-	border-radius: 5px;
-
-}
-
 
 /* Menus*/
 .main-background {
@@ -301,7 +397,7 @@ div > h2 {
 	width: 100%;
 	display: flex;
 	justify-content: flex-start;
-	margin-left: 5%;
+margin-left: 6%;
 	color: dimgrey;
 }
 
@@ -332,17 +428,35 @@ div > h2 {
 	height: 70px;
 	width: 95%;
 	box-shadow: 0px 2px 10px 3px lightgrey;
+	transition: .5s
 }
 
+.plat-info {
 
+	display: flex;
+	justify-content: flex-start;
+}
 
 .plat-view {
 	width: 100%;
+	overflow: hidden;
+    text-overflow: ellipsis;
 	display: flex;
 	justify-content: space-between;
-	white-space: nowrap;
+    white-space: nowrap;
 
 }	
+.plat-food {
+	white-space: nowrap;
+	width: 80%;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+
+    
+}
 
 .plat-price {
 
@@ -368,6 +482,16 @@ footer {
 
 
 }
+
+
+.fa-utensils {
+	padding-right: 4%;
+}
+
+.fa-hands-helping {
+	padding-right: 2%;
+}
+
 .logo-footer {
 	font-family: 'Shrikhand', cursive;
 	font-size: 20px;
@@ -389,4 +513,43 @@ img {
 	border-top-right-radius: 15px;
 	object-fit: cover;
 }
+
+header > img {
+border-top-left-radius: 0;
+	border-top-right-radius: 0;
+
+}
+/*responsive iphone5/SE*/
+
+@media (max-width: 320px) {
+
+	.header-button {
+		padding-bottom: 40px;
+	}
+
+	.header-button {
+
+		padding-top: 20px;
+	}
+
+	.plat-info h3 {
+		font-size: 16px;
+	}
+
+	.nouveau {
+		left: 72%;
+	}
+}
+@media (max-width: 425px) {
+
+	.header-bottom > h2 {
+
+		display: flex;
+		justify-content: center;
+	}
+}
+
+
+}
+
 
