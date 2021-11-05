@@ -335,7 +335,7 @@ h4 {
 }
 
 h3 {
-	font-size: 20p;
+	font-size: 20px;
 	margin-bottom: 0;
 }
 
@@ -829,7 +829,7 @@ flex-direction: row;
     }
 
 
-}
+
 
 /*responsive desktop large screen*/
 @media (min-width: 1440px) and (max-width: 1950px) {  
@@ -922,7 +922,7 @@ display: grid;
     	margin-top: 20px;
 
     }
-    }
+    
 	
 }
 	
