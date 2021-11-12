@@ -36,60 +36,61 @@
 }
 
 .loader {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  z-index: 10000;
-  -webkit-animation: hide-spinner 3s 1;
-          animation: hide-spinner 3s 1;
-  visibility: hidden;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 10000;
+	-webkit-animation: hide-spinner 3s 1;
+	animation: hide-spinner 3s 1;
+	visibility: hidden;
 }
 
 .loader .loader-circle {
-  border: 10px solid #rebeccapurple;
-  border-top: 10px solid #aliceblue;
-  border-bottom: 10px solid #ff79da;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  -webkit-animation: spin linear 1.5s 2;
-          animation: spin linear 1.5s 2;
+	border: 10px solid #rebeccapurple;
+	border-top: 10px solid #aliceblue;
+	border-bottom: 10px solid #ff79da;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	-webkit-animation: spin linear 1.5s 2;
+	animation: spin linear 1.5s 2;
 }
 @keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
 }
 
 @-webkit-keyframes hide-spinner {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-  }
+	0% {
+		visibility: visible;
+	}
+	100% {
+		visibility: hidden;
+	}
 }
 
 @keyframes hide-spinner {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-  }
+	0% {
+		visibility: visible;
+	}
+	100% {
+		visibility: hidden;
+	}
 }
+
 
 /*header*/
 
@@ -416,7 +417,7 @@ div > h2 {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	
+	position: relative;
 
 }
 .plat-part > button:hover {
@@ -426,15 +427,58 @@ div > h2 {
 	cursor: pointer;
 	border-radius: 20px;
 	height: 70px;
-	width: 95%;
+	width: 100%;
 	box-shadow: 0px 2px 10px 3px lightgrey;
 	transition: .5s
+
 }
+.plat-view:hover {
+	width: 78%;
+	transition: 1s
+}
+
+
+.plat-part > button .check {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	width: 0;
+	height: 100%;
+	overflow: hidden;
+
+
+}
+
+.plat-part > button:hover .check {
+	position: absolute;
+	width: 22%;
+	left: 78%;
+	color: blue;
+	background-color: #99E2D0;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	transition: 1s ease;
+}
+
+.fa-check-circle {
+	color: white;
+
+}
+
+
 
 .plat-info {
 
 	display: flex;
 	justify-content: flex-start;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	
+
 }
 
 .plat-view {
@@ -444,8 +488,11 @@ div > h2 {
 	display: flex;
 	justify-content: space-between;
 	white-space: nowrap;
-
+	
 }	
+
+
+
 .plat-food {
 	white-space: nowrap;
 	width: 80%;
@@ -461,7 +508,11 @@ div > h2 {
 .plat-price {
 
 	font-weight: bold;
+	margin-right: 3%;
+
 }
+
+
 
 .button-commander {
 	padding-top: 10%;
@@ -556,9 +607,9 @@ header > img {
 	}
 
 	.plat-type {
-display: flex;
+		display: flex;
 		flex-direction: column;
-}
+	}
 }
 
 
@@ -566,20 +617,20 @@ display: flex;
 /*responsive tablette*/
 @media (min-width: 600px) and (max-width: 800px) {
 
-#restaurants-list {
+	#restaurants-list {
 
-	display: grid;
-	grid-template-columns: 40% 40%;
-	grid-template-rows: 40% 40%;
-	grid-gap: 15%;
-	margin-left: 5%;
-	padding-bottom: 5%;
-}
+		display: grid;
+		grid-template-columns: 40% 40%;
+		grid-template-rows: 40% 40%;
+		grid-gap: 15%;
+		margin-left: 5%;
+		padding-bottom: 5%;
+	}
 
-.nouveau {
+	.nouveau {
 
-	left: 70%;
-}
+		left: 70%;
+	}
 
 	.fonctionnement__section {
 
@@ -596,19 +647,19 @@ display: flex;
 	}
 
 	.fonctionnement__section button:hover {
-	
-	height: 70px;
-	width: 100%;
-	
-}
 
-p {
+		height: 70px;
+		width: 100%;
 
-	display: flex;
-	justify-content: center;
-}
+	}
 
-.header-bottom h2 {
+	p {
+
+		display: flex;
+		justify-content: center;
+	}
+
+	.header-bottom h2 {
 		display: flex;
 		justify-content: center;
 	}
@@ -629,9 +680,9 @@ p {
 		font-size: 60px;
 	}
 	.icon {
-	font-size: 40px;
-	margin-right: 3%;
-}
+		font-size: 40px;
+		margin-right: 3%;
+	}
 
 	p {
 
@@ -693,40 +744,40 @@ p {
 	}
 
 	.fonctionnement__section button:hover {
-	
-	height: 70px;
-	width: 70%;
-	
-}
+
+		height: 70px;
+		width: 70%;
+
+	}
 
 	.fonction-number {
 		right: 82%;
 	}
 
 	img {
-	
-	height: 200px;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	object-fit: cover;
-}
 
-header > img {
+		height: 200px;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		object-fit: cover;
+	}
 
-	height: 500px;
-}
+	header > img {
 
-#restaurants-list {
+		height: 500px;
+	}
 
-	display: grid;
-	grid-template-columns: 40% 40%;
-	grid-template-rows: 40% 40%;
-	grid-gap: 10%;
-	margin-left: 10%;
-}
+	#restaurants-list {
+
+		display: grid;
+		grid-template-columns: 40% 40%;
+		grid-template-rows: 40% 40%;
+		grid-gap: 10%;
+		margin-left: 10%;
+	}
 	.nouveau {
-	top: -950%;
-	background-color: #99E2D0;
+		top: -950%;
+		background-color: #99E2D0;
 	}
 
 	footer {
@@ -763,70 +814,71 @@ header > img {
 		justify-content: center;
 		padding: 0;
 	}
-.plat-part {
+	.plat-part {
 
-	margin: 2%;
-}
+		margin: 2%;
+	}
 
-.plat-part > button:hover {
+	.plat-part > button:hover {
 
-	height: 150px;
-	width: 300px;
-	
-}
+		height: 150px;
+		width: 300px;
 
-.plat-info h3 {
+	}
+
+	.plat-info h3 {
 		font-size: 25px;
 		margin-bottom: 10px;
 		text-align: left	;
 	}
-.plat-view h4 {
+	.plat-view h4 {
 		font-size: 20px;
 	}
-.plat-type {
+	.plat-type {
 
-display: flex;
-flex-direction: row;
-}
+		display: flex;
+		flex-direction: row;
+	}
 
 	.plat-type button {
 		height: 150px;
 		width: 300px;
 	} 
 
-.plat-type > button:hover {
-	height: 150px;
-}
+	.plat-type > button:hover {
+		height: 150px;
+		width: 300px;
+	}
 
 
 
 	.logo-header, .logo-header-menu, .menu-title {
 		font-size: 50px;
-}
-.header-button button {
-	
-	width: 40%;
-	font-size: 25px;
-}
+	}
+	.header-button button {
 
-.header-button{
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin: 5px;
-}
+		width: 40%;
+		font-size: 25px;
+	}
 
-.like-btn{
+	.header-button{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin: 5px;
+	}
 
-	right: 10%;
+	.like-btn{
 
-}
+		right: 10%;
 
-@-moz-document url-prefix() {
-    footer {
-    	margin-top: 100px;
+	}
 
-    }
-    }
+	@-moz-document url-prefix() {
+		footer {
+			margin-top: 100px;
+
+		}
+	}
 
 
 
@@ -834,12 +886,12 @@ flex-direction: row;
 /*responsive desktop large screen*/
 @media (min-width: 1440px) and (max-width: 1950px) {  
 
-.header-button {
+	.header-button {
 
-	padding-bottom: 2%;
-}
+		padding-bottom: 2%;
+	}
 
-p {
+	p {
 
 		display: flex;
 		justify-content: center;
@@ -847,34 +899,34 @@ p {
 
 	}
 
-.header-bottom h2 {
+	.header-bottom h2 {
 		display: flex;
 		justify-content: center;
 		font-size: 25px;
 
 	}
 
-.plat-part {
+	.plat-part {
 
-width: 400px;
-}
+		width: 400px;
+	}
 
-.plat-part button {
-	width: 400px;
-}
+	.plat-part button {
+		width: 400px;
+	}
 
-#restaurants-list {
-display: grid;
-	grid-gap: 10%;
-	grid-template-columns: 45% 45%;
-	grid-template-rows: 45% 45%;
-	margin-left: 3%;
-	margin-right: 3%;
-	padding-bottom: 5%;
-	
-}
+	#restaurants-list {
+		display: grid;
+		grid-gap: 10%;
+		grid-template-columns: 45% 45%;
+		grid-template-rows: 45% 45%;
+		margin-left: 3%;
+		margin-right: 3%;
+		padding-bottom: 5%;
 
-.fonctionnement__section {
+	}
+
+	.fonctionnement__section {
 
 		display: flex;
 		flex-direction: row;
@@ -896,11 +948,11 @@ display: grid;
 	}
 
 	.fonctionnement__section button:hover {
-	
-	height: 70px;
-	width: 300px;
-	
-}
+
+		height: 70px;
+		width: 300px;
+
+	}
 
 	.fonction-number {
 		right: 95%;
@@ -917,14 +969,14 @@ display: grid;
 		font-size: 25px;
 	}
 
-@-moz-document url-prefix() {
-    #footer-content {
-    	margin-top: 20px;
+	@-moz-document url-prefix() {
+		#footer-content {
+			margin-top: 20px;
 
-    }
-    
-	
-}
+		}
+
+
+	}
 	
 	
 	#footer-content {
@@ -955,25 +1007,25 @@ display: grid;
 
 	.plat-type {
 
-display: flex;
-flex-direction: row;
-}
+		display: flex;
+		flex-direction: row;
+	}
 
 	.plat-part button {
 		height: 150px;
 		width: 300px;
 	} 
 
-.plat-part > button:hover {
-	height: 150px;
-	width: 300px;
+	.plat-part > button:hover {
+		height: 150px;
+		width: 300px;
 
 
 
 
 
 
-}	
+	}	
 
 
 
