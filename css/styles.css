@@ -82,6 +82,7 @@
 	}
 }
 
+
 @keyframes hide-spinner {
 	0% {
 		visibility: visible;
@@ -167,6 +168,8 @@ header::before {
 	font-size: 20px;
 	margin-right: 3%;
 }
+
+
 
 div>h2,
 p {
@@ -1026,16 +1029,6 @@ header > img {
 
 
 	}	
-
-
-
-
-
-
-
-
-
-
 
 
 
