@@ -406,7 +406,7 @@ div > h2 {
 }
 
 
-.plat-part > button {
+.plat-part button {
 	
 	background-color: white;
 	border-radius: 20px;
@@ -418,30 +418,56 @@ div > h2 {
 	font-weight: 500;
 	margin-bottom: 5%;
 	display: flex;
-	justify-content: center;
-	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	flex: 1;
 
 }
-.plat-part > button:hover {
-	/* color: #9356DC;*/
+.plat-part button:hover {
+
 
 	background-color: #fdeeff;
 	cursor: pointer;
-	border-radius: 20px;
 	height: 70px;
 	width: 100%;
 	box-shadow: 0px 2px 10px 3px lightgrey;
-	transition: .5s
+	transition: 1.5s
 
 }
-.plat-view:hover {
-	width: 78%;
-	transition: 1s
+
+.plat-part button .plat-price {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	position: absolute;
+	transition: 1.5s;
+	left: 85%;
+	top: 45%;
+
+
+
+}
+
+.plat-price h4{
+
+	font-weight: 600;
+} 
+
+.plat-part button:hover .plat-price {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	position: absolute;
+	transition: 1.5s;
+	left: 70%;
 }
 
 
-.plat-part > button .check {
+.plat-part button .check {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -450,71 +476,51 @@ div > h2 {
 	top: 0;
 	width: 0;
 	height: 100%;
-	overflow: hidden;
-
+	
 
 }
 
 .plat-part > button:hover .check {
 	position: absolute;
-	width: 22%;
-	left: 78%;
+	width: 20%;
+	left: 80%;
 	color: blue;
 	background-color: #99E2D0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	transition: 1s ease;
+	transition: 1.5s;
+}
+
+.plat-info {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 90%;
+}
+
+.plat-info:hover {
+	width: 70%;
+	transition: 1.5s;
+
+
+}
+
+
+.plat-info h3, .plat-info h4{
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	text-align: start;
+
 }
 
 .fa-check-circle {
 	color: white;
 
 }
-
-
-
-.plat-info {
-
-	display: flex;
-	justify-content: flex-start;
-	overflow: hidden;
-	text-overflow: ellipsis;
-
-	
-
-}
-
-.plat-view {
-	width: 100%;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: flex;
-	justify-content: space-between;
-	white-space: nowrap;
-	
-}	
-
-
-
-.plat-food {
-	white-space: nowrap;
-	width: 80%;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 100%;
-	display: inline-block;
-	text-align: left;
-
-
-}
-
-.plat-price {
-
-	font-weight: bold;
-	margin-right: 3%;
-
-}
-
 
 
 .button-commander {
