@@ -91,8 +91,169 @@
 		visibility: hidden;
 	}
 }
+.button-apear {
+
+animation: button-apear 3s 1;
+animation-delay: 0s;
+animation-direction: normal;
 
 
+
+}
+
+.button-apear2 {
+
+animation: button-apear2 3s 1;
+animation-delay: 0s;
+
+}
+
+.button-apear3 {
+
+animation: button-apear3 3s 1;
+animation-delay: 0s;
+
+}
+
+
+@keyframes button-apear {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+	
+	}
+
+	10% {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	20% {
+opacity: 0.1;
+
+	}
+
+	30% {
+opacity: 0.25;
+
+	}
+	40% {
+opacity: 0.4;
+
+	}
+	60% {
+opacity: 0.5;
+
+	}
+
+	75% {
+opacity: 0.65;
+
+	}
+
+	90% {
+		opacity: 0.85;
+
+	}
+
+	100% {
+
+		opacity: 1;
+	}
+}
+
+
+@keyframes button-apear2 {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+	
+	}
+
+	10% {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	20% {
+opacity: 0;
+
+	}
+
+	30% {
+opacity: 0;
+
+	}
+	40% {
+opacity: 0.3;
+
+	}
+	60% {
+opacity: 0.5;
+
+	}
+
+	75% {
+opacity: 0.65;
+
+	}
+
+	90% {
+		opacity: 0.85;
+
+	}
+
+	100% {
+
+		opacity: 1;
+	}
+}
+
+@keyframes button-apear3 {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+	
+	}
+
+	10% {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	20% {
+opacity: 0;
+
+	}
+
+	30% {
+opacity: 0;
+
+	}
+	40% {
+opacity: 0.1;
+
+	}
+	60% {
+opacity: 0.3;
+
+	}
+
+	75% {
+opacity: 0.65;
+
+	}
+
+	90% {
+		opacity: 0.85;
+
+	}
+
+	100% {
+
+		opacity: 1;
+	}
+}
 /*header*/
 
 body {
