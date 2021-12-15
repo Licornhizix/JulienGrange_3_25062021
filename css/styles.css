@@ -9,17 +9,18 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 80px;
-	height: 80px;
+	width: 30px;
+	height: 30px;
 	cursor: pointer;
 	transition: all 0.5s;
 	opacity: 0;
 	z-index: 2;
+	
 
 }
 .fa-heart{
 
-	left: 85%;
+	left: 90%;
 	position: absolute;
 	font-size: 25px;
 	-webkit-text-stroke: 2px #e5e5e5;
@@ -32,6 +33,7 @@
 	color: #9356DC;
 	-webkit-text-stroke: 0px black;
 	transition: 1.5s ease-in-out;
+
 
 }
 
@@ -296,17 +298,31 @@ header::before {
 }
 
 .logo-header-menu {
-	width: 100%;
+	
 
 }
 
 .header-top-menu {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: center;
+	position: relative;
+	
 
 }
+.fleche{
+	display: flex;
+	justify-items: flex-start;
+	align-items: center;
+	left: 0%;
+	top: 15%;
+	position: absolute;
+}
 
+.fa-arrow-left{
+	display: flex;
+	justify-items: flex-start;
+	
+}
 
 
 .header-bottom {
@@ -559,7 +575,7 @@ div > h2 {
 
 .menu-part {
 
-	width: 100%;
+	width: 90%;
 	display: flex;
 	justify-content: flex-start;
 	margin-left: 6%;
@@ -570,8 +586,9 @@ div > h2 {
 
 	line-height: 180%;
 }
-
-
+.underline{
+	position:relative;
+}
 .underline::after {
 	content: "";
 	display: block;
@@ -579,6 +596,8 @@ div > h2 {
 	width: 4rem;
 	height: 0.2rem;
 	left: 0;
+	top: 70%;
+	position: absolute;
 }
 
 .plat-part button {
@@ -744,15 +763,24 @@ footer {
 	padding-right: 2%;
 }
 
+.footer-content {
+
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	
+}
+
 .logo-footer {
 	font-family: 'Shrikhand', cursive;
 	font-size: 20px;
-	padding-left: 10%;
-	padding-right: 20%;
+	font-weight: 300;
 	display: flex;
 	justify-content: flex-start;
-	font-weight: 300;
+	margin-left: 13%;
 }
+
+
 
 ul {
 	list-style: none;
@@ -811,8 +839,12 @@ header > img {
 		display: flex;
 		flex-direction: column;
 	}
+	.fleche{
+	
+	right: 30%;
 }
 
+}
 
 
 /*responsive tablette*/
@@ -843,7 +875,7 @@ header > img {
 	.fonction-button button{
 		width: 100%;
 		font-size: 17px;
-		margin: 5%;
+		margin: 8%;
 
 	}
 
@@ -852,6 +884,12 @@ header > img {
 		height: 70px;
 		width: 100%;
 
+	}
+
+	#restaurants h2
+
+	{
+		text-align: center;
 	}
 
 	p {
@@ -865,9 +903,85 @@ header > img {
 		justify-content: center;
 	}
 
-	.fonction-number {
-		right: 82%;
+	.explorer {
+
+		padding-bottom: 3%;
+		padding-top: 8px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
+
+	.explorer button{
+		width: 200px;
+	}
+
+	.center{
+		text-align: center;
+	}
+
+	ul, li {
+
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 0;
+		margin-left: 3%;
+	}
+
+	.reserver {
+
+		padding-bottom: 8px;
+
+	}
+
+	.fonction-number {
+		right: 92%;
+	}
+	#footer-content {
+		width: 98%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	ul, li {
+
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 0;
+	}
+	#logo{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+	
+
+	.logo-footer , .logo-header{
+		font-size: 40px;
+		
+	}
+	.logo-footer{
+		margin: 0;
+	}
+
+	.fleche h1{
+
+		display: flex;
+		justify-self: center;
+
+
+	}
+
+	footer {
+		margin-top: 8%;
+
+	}
+
+
 
 
 }
@@ -909,6 +1023,11 @@ header > img {
 	.header-top span {
 		font-size: 25px;
 
+	}
+
+	.fa-arrow-left {
+
+		font-size: 27px;
 	}
 
 	div .header-button {
@@ -986,12 +1105,13 @@ header > img {
 		display: flex;
 		justify-content: center;
 		font-size: 25px;
+
 	}
 
 	
 	
 	#footer-content {
-		width: 100%;
+		width: 98%;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
@@ -1003,8 +1123,8 @@ header > img {
 		justify-content: center;
 		width: 100%;
 		padding: 0;
-	}
 
+	}
 
 
 
@@ -1014,7 +1134,9 @@ header > img {
 		display: flex;
 		justify-content: center;
 		padding: 0;
+		margin: 0;
 	}
+	
 	.plat-part {
 
 		margin: 2%;
@@ -1030,11 +1152,23 @@ header > img {
 	.plat-info h3 {
 		font-size: 25px;
 		margin-bottom: 10px;
-		text-align: left	;
+		text-align: left;
 	}
 	.plat-view h4 {
 		font-size: 20px;
 	}
+
+	.plat-part button .plat-price {
+
+		top: 55%;
+
+	} 
+
+	h4{
+		font-size: 20px;
+	} 
+
+	
 	.plat-type {
 
 		display: flex;
@@ -1068,16 +1202,32 @@ header > img {
 		margin: 5px;
 	}
 
-	.like-btn{
 
-		right: 10%;
 
-	}
+	
 
-	@-moz-document url-prefix() {
-		footer {
-			margin-top: 100px;
+		.explorer{
+			margin-top: none;
+		}
 
+		.explorer button{
+			width: 400px;
+
+		}
+
+		.underline{
+			position:relative;
+		}
+
+		.underline::after {
+			content: "";
+			display: block;
+			background-color: #99E2D0;
+			width: 4rem;
+			height: 0.2rem;
+			left: 0;
+			top: 40%;
+			position: absolute;
 		}
 	}
 
@@ -1204,6 +1354,8 @@ header > img {
 		display: flex;
 		justify-content: center;
 		padding: 0;
+		margin: 0;
+	
 	}
 
 	.plat-type {
@@ -1220,13 +1372,16 @@ header > img {
 	.plat-part > button:hover {
 		height: 150px;
 		width: 300px;
+	}
+
+	.fonction-text{
+		font-size: 20px;
+	}
 
 
 
 
-
-
-	}	
+}	
 
 
 

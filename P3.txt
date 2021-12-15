@@ -128,3 +128,13 @@ a faire:
 
 -nettoyer css 
 -appliquer code à tt les pages
+
+15/12/2021
+
+A corriger
+
+-responsive firefox
+
+2. Fleche au centre au lieu de droite
+3 trait au dessus de entrée au lieu de en dessous
+4 hover sur firefox en version movile ou alors aucun hover au clic en mobile
