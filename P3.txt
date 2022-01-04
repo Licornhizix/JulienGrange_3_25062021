@@ -1,4 +1,4 @@
-11/08/2021
+13:11 16/12/202111/08/2021
 
 Fait
 
@@ -135,6 +135,11 @@ A corriger
 
 -responsive firefox
 
-2. Fleche au centre au lieu de droite
-3 trait au dessus de entrée au lieu de en dessous
+
+1.heart ne marchent pas sous brave
+
 4 hover sur firefox en version movile ou alors aucun hover au clic en mobile
+
+2 revoir le responsive footer sous mozilla
+
+3etiquette "nouveau" à mettre a gauche en reponsive 810px
