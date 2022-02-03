@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"},
+    "sass": "sass --watch ./sass/main.scss:./css/style"},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Licornhizix/JulienGrange_3_25062021.git"
