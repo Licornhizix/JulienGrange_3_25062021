@@ -17,6 +17,10 @@
   transition: 1.5s ease-in-out;
 }
 
+.like-btn {
+  border: none;
+}
+
 .loader {
   position: fixed;
   height: 100%;
