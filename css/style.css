@@ -3,20 +3,19 @@
   margin-right: 2%;
 }
 
-.fa-heart {
-  position: relative;
-  font-size: 25px;
-  color: #EDEDEC;
-  -webkit-text-stroke: 1px black;
-}
-.fa-heart:hover {
-  color: #9356DC;
-  -webkit-text-stroke: 0px black;
-  transition: 1.5s ease-in-out;
-}
-
 .like-btn {
   border: none;
+}
+.like-btn .fa-heart {
+  position: relative;
+  font-size: 25px;
+  color: #ededec;
+  -webkit-text-stroke: 1px black;
+}
+.like-btn .fa-heart:hover {
+  color: #9356dc;
+  -webkit-text-stroke: 0px #5c2f2f;
+  transition: 1.5s ease-in-out;
 }
 
 .loader {
@@ -30,7 +29,7 @@
   width: 100%;
 }
 .loader .loader-circle {
-  border: 10px solid purple;
+  border: 10px solid #9356dc;
   border-top: 10px solid blue;
   border-bottom: 10px solid #ff79da;
   border-radius: 50%;
@@ -62,19 +61,8 @@
     visibility: hidden;
   }
 }
-.button-apear {
+.button-apear, .button-apear2, .button-apear3 {
   animation: button-apear 3s 1;
-  animation-delay: 0s;
-  animation-direction: normal;
-}
-
-.button-apear2 {
-  animation: button-apear2 3s 1;
-  animation-delay: 0s;
-}
-
-.button-apear3 {
-  animation: button-apear3 3s 1;
   animation-delay: 0s;
 }
 
@@ -182,6 +170,14 @@ header {
   justify-items: flex-start;
   position: relative;
 }
+header .localisation {
+  background-image: linear-gradient(to top, #f3eae9, #f3eae9, #f3eae9, #f3eae9, #f3eae9, #f3eae9, #f3eae9, lightgrey);
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 15px;
+}
 header .header-top-menu {
   display: flex;
   justify-content: center;
@@ -194,18 +190,21 @@ header .header-top-menu a {
   left: 0%;
   top: 15%;
   position: absolute;
+  text-decoration: none;
+  color: black;
 }
 header::before {
   content: "";
   position: absolute;
-  background-color: #EDEDEC;
+  background-color: #ededec;
   bottom: -5px;
   height: 30px;
   width: 100%;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
-header .logo-header, header .logo-header-menu {
+header .logo-header,
+header .logo-header-menu {
   font-family: "Shrikhand", cursive;
   font-size: 25px;
   display: flex;
@@ -216,7 +215,7 @@ header .logo-header, header .logo-header-menu {
   margin-bottom: 0;
 }
 header .header-bottom {
-  background-image: linear-gradient(to top, #EDEDEC, white);
+  background-image: linear-gradient(to top, #ededec, white);
 }
 
 .menu-title {
@@ -224,39 +223,20 @@ header .header-bottom {
   font-size: 25px;
 }
 
-.localisation {
-  background-color: red;
-  background-image: linear-gradient(to top, #F3EAE9, #F3EAE9, #F3EAE9, #F3EAE9, #F3EAE9, #F3EAE9, #F3EAE9, lightgrey);
-  display: flex;
-  justify-content: center;
-  font-size: 15px;
-  font-weight: bolder;
-  padding: 15px;
-}
-
 .icon {
   font-size: 20px;
   margin-right: 3%;
 }
 
-div > h2,
-p {
-  display: flex;
-  text-align: center;
-}
-
 h2 {
+  display: flex;
+  justify-content: center;
   font-size: 20px;
   font-weight: 900;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 25px;
   padding-bottom: 25px;
-}
-
-p {
-  color: gray;
-  font-size: 18px;
 }
 
 .button {
@@ -270,12 +250,17 @@ p {
 .header-top {
   width: 100%;
 }
+.header-top .header-bottom p {
+  color: gray;
+  font-size: 18px;
+  text-align: center;
+}
 
 .header-button button {
-  background-color: #9356DC;
-  background-image: linear-gradient(to left, #9356DC, #FF79DA);
+  background-color: #9356dc;
+  background-image: linear-gradient(to left, #9356dc, #ff79da);
   border: none;
-  color: white;
+  color: #deebff;
   border-radius: 25px;
   height: 50px;
   width: 55%;
@@ -285,10 +270,8 @@ p {
   justify-content: center;
   align-items: center;
 }
-
 .header-button button:hover {
   color: #deebff;
-  background-color: purple;
   cursor: pointer;
   border-radius: 25px;
   height: 50px;
@@ -298,7 +281,7 @@ p {
 
 /* fonctionnement*/
 .fonctionnement__section button {
-  background-color: #EDEDEC;
+  background-color: #ededec;
   border-radius: 20px;
   height: 70px;
   width: 90%;
@@ -310,21 +293,15 @@ p {
   justify-content: center;
   align-items: center;
 }
-
 .fonctionnement__section button:hover {
-  /* color: #9356DC;*/
   background-color: #fdeeff;
   cursor: pointer;
   border-radius: 20px;
-  height: 70px;
-  width: 90%;
   box-shadow: 0px 2px 10px 3px lightgrey;
   transition: 0.5s;
 }
-
-/* modifie*/
 .fonctionnement__section button:hover .fonction-icon {
-  color: #9356DC;
+  color: #9356dc;
   transition: 0.5s ease-in-out;
 }
 
@@ -336,7 +313,7 @@ p {
   right: 90%;
   padding: 7px 7px;
   border-radius: 50%;
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
   width: 16px;
   height: 16px;
@@ -349,18 +326,20 @@ p {
 
 /* main*/
 main {
-  background-color: #EDEDEC;
+  background-color: #ededec;
 }
-
-.restaurants-list {
+main .restaurants-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 35px;
   row-gap: 35px;
   margin-bottom: 40px;
 }
-
-.restaurants-info {
+main .restaurants-list .main-background {
+  background-color: #ededec;
+  padding-bottom: 5%;
+}
+main .restaurants-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -368,14 +347,7 @@ main {
   margin-right: 5%;
   height: 70px;
 }
-
-.restaurants-cards-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-a {
+main .restaurants-info a {
   color: black;
   text-decoration: none;
   position: relative;
@@ -403,18 +375,13 @@ h3 {
   left: 76%;
   font-size: 15px;
   top: -1200%;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: green;
   padding: 10px;
   border-radius: 5px;
 }
 
 /* Menus*/
-.main-background {
-  background-color: #EDEDEC;
-  padding-bottom: 5%;
-}
-
 .menu-name {
   display: flex;
   justify-content: space-between;
@@ -427,11 +394,6 @@ h3 {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-}
-
-div > h2 {
-  display: flex;
-  justify-content: flex-start;
 }
 
 .plat-type {
@@ -448,41 +410,65 @@ div > h2 {
   color: dimgrey;
 }
 
-.menu-part h2 {
+.plat-info {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+}
+.plat-info:hover {
+  width: 70%;
+  transition: 1.5s;
+}
+.plat-info h3, .plat-info h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: start;
+}
+
+.plat-part .menu-part h2 {
   line-height: 180%;
 }
-
-.underline {
+.plat-part .underline {
   position: relative;
 }
-
-.underline::after {
+.plat-part .underline::after {
   content: "";
   display: block;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   width: 4rem;
   height: 0.2rem;
   left: 0;
   top: 70%;
   position: absolute;
 }
-
 @-moz-document url-prefix() {
-  .underline {
+  .plat-part .underline {
     position: relative;
   }
 }
 @-moz-document url-prefix() {
-  .underline::after {
+  .plat-part .underline::after {
     content: "";
     display: block;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     width: 4rem;
     height: 0.2rem;
     left: 0;
     top: 70%;
     position: absolute;
   }
+}
+.plat-part button:hover .plat-price {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: absolute;
+  transition: 1.5s;
+  left: 70%;
 }
 .plat-part button {
   background-color: white;
@@ -503,18 +489,13 @@ div > h2 {
   text-overflow: ellipsis;
   flex: 1;
 }
-
 .plat-part button:hover {
   background-color: #fdeeff;
   cursor: pointer;
-  height: 70px;
-  width: 100%;
   box-shadow: 0px 2px 10px 3px lightgrey;
   transition: 1.5s;
 }
-
 .plat-part button .plat-price {
-  display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   position: absolute;
@@ -522,20 +503,9 @@ div > h2 {
   left: 85%;
   top: 45%;
 }
-
-.plat-price h4 {
+.plat-part button .plat-price h4 {
   font-weight: 600;
 }
-
-.plat-part button:hover .plat-price {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  position: absolute;
-  transition: 1.5s;
-  left: 70%;
-}
-
 .plat-part button .check {
   display: flex;
   align-items: center;
@@ -546,47 +516,23 @@ div > h2 {
   width: 0;
   height: 100%;
 }
-
-.plat-part > button:hover .check {
-  position: absolute;
-  width: 20%;
-  left: 80%;
-  background-color: #99E2D0;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  transition: 1.5s;
-}
-
-.plat-info {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 90%;
-}
-
-.plat-info:hover {
-  width: 70%;
-  transition: 1.5s;
-}
-
-.plat-info h3, .plat-info h4 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
-  text-align: start;
-}
-
 .plat-part > button .check i {
   left: 100%;
   top: 0;
   width: 0;
   height: 100%;
 }
-
+.plat-part > button:hover .check {
+  position: absolute;
+  width: 20%;
+  left: 80%;
+  background-color: #99e2d0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: 1.5s;
+}
 .plat-part > button:hover .check i {
-  color: #99E2D0;
+  color: #99e2d0;
   border-radius: 50%;
   background-color: white;
   height: 20px;
@@ -609,27 +555,12 @@ footer {
   padding-top: 3%;
   margin-top: 0;
 }
-
-@-moz-document url-prefix() {
-  footer {
-    margin-top: 10%;
-  }
-}
-.fa-utensils {
-  padding-right: 4%;
-}
-
-.fa-hands-helping {
-  padding-right: 2%;
-}
-
-.footer-content {
+footer .footer-content {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
-
-.logo-footer {
+footer .logo-footer {
   font-family: "Shrikhand", cursive;
   font-size: 20px;
   font-weight: 300;
@@ -637,11 +568,25 @@ footer {
   justify-content: flex-start;
   margin-left: 13%;
 }
-
-ul {
+footer .fa-utensils {
+  padding-right: 4%;
+}
+footer .fa-hands-helping {
+  padding-right: 2%;
+}
+footer ul {
   list-style: none;
 }
+footer a {
+  text-decoration: none;
+  color: white;
+}
 
+@-moz-document url-prefix() {
+  footer {
+    margin-top: 10%;
+  }
+}
 img {
   width: 100%;
   height: 250px;
@@ -730,11 +675,6 @@ header > img {
     text-align: center;
   }
 
-  p {
-    display: flex;
-    justify-content: center;
-  }
-
   .header-bottom h2 {
     display: flex;
     justify-content: center;
@@ -756,16 +696,13 @@ header > img {
     text-align: center;
   }
 
-  ul, li {
+  ul,
+li {
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 0;
     margin-left: 3%;
-  }
-
-  .reserver {
-    padding-bottom: 8px;
   }
 
   .fonction-number {
@@ -779,7 +716,8 @@ header > img {
     flex-direction: column;
   }
 
-  ul, li {
+  ul,
+li {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -792,17 +730,13 @@ header > img {
     align-items: center;
   }
 
-  .logo-footer, .logo-header {
+  .logo-footer,
+.logo-header {
     font-size: 40px;
   }
 
   .logo-footer {
     margin: 0;
-  }
-
-  .fleche h1 {
-    display: flex;
-    justify-self: center;
   }
 
   footer {
@@ -811,7 +745,8 @@ header > img {
 }
 /*responsive desktop large screen*/
 @media (min-width: 800px) and (max-width: 1440px) {
-  .logo-header, .logo-header-menu {
+  .logo-header,
+.logo-header-menu {
     font-size: 60px;
   }
 
@@ -821,12 +756,6 @@ header > img {
   }
 
   p {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-  }
-
-  h2 {
     display: flex;
     justify-content: center;
     font-size: 25px;
@@ -906,7 +835,7 @@ header > img {
 
   .nouveau {
     top: -950%;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
   }
 
   footer {
@@ -922,7 +851,8 @@ header > img {
     flex-direction: column;
   }
 
-  ul, li {
+  ul,
+li {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -984,7 +914,9 @@ header > img {
     width: 225px;
   }
 
-  .logo-header, .logo-header-menu, .menu-title {
+  .logo-header,
+.logo-header-menu,
+.menu-title {
     font-size: 50px;
   }
 
@@ -1086,7 +1018,8 @@ header > img {
     flex-direction: column;
   }
 
-  ul, li {
+  ul,
+li {
     display: flex;
     justify-content: center;
     width: 100%;
