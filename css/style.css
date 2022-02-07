@@ -215,6 +215,8 @@ header .logo-header-menu {
 }
 header .header-bottom {
   background-image: linear-gradient(to top, #ededec, white);
+  display: block;
+  text-align: center;
 }
 header .menu-name {
   width: 75%;
@@ -240,6 +242,10 @@ h2 {
   margin-bottom: 0;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+button {
+  color: red;
 }
 
 .button {
@@ -360,13 +366,11 @@ h4 {
   font-size: 16px;
   margin-top: 3px;
   font-weight: 100;
-  color: black;
 }
 
 h3 {
   font-size: 20px;
   margin-bottom: 0;
-  color: black;
 }
 
 .icon-score {
@@ -375,14 +379,18 @@ h3 {
   font-size: 20px;
 }
 
+article {
+  position: relative;
+}
+
 .nouveau {
   position: absolute;
   left: 76%;
   font-size: 15px;
-  top: -1200%;
   background-color: #99e2d0;
   color: green;
   padding: 10px;
+  top: 5%;
   border-radius: 5px;
 }
 
@@ -839,8 +847,7 @@ li {
   }
 
   .nouveau {
-    top: -950%;
-    background-color: #99e2d0;
+    left: 70%;
   }
 
   footer {
@@ -1091,6 +1098,10 @@ li {
 
   .fonction-text {
     font-size: 20px;
+  }
+
+  .nouveau {
+    left: 80%;
   }
 }
 
