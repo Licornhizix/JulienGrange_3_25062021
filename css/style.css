@@ -206,7 +206,6 @@ header::before {
 header .logo-header,
 header .logo-header-menu {
   font-family: "Shrikhand", cursive;
-  font-size: 25px;
   display: flex;
   justify-content: center;
   padding-top: 0;
@@ -217,10 +216,14 @@ header .logo-header-menu {
 header .header-bottom {
   background-image: linear-gradient(to top, #ededec, white);
 }
+header .menu-name {
+  width: 75%;
+}
 
 .menu-title {
   font-family: "Shrikhand", cursive;
   font-size: 25px;
+  justify-content: center;
 }
 
 .icon {
@@ -357,11 +360,13 @@ h4 {
   font-size: 16px;
   margin-top: 3px;
   font-weight: 100;
+  color: black;
 }
 
 h3 {
   font-size: 20px;
   margin-bottom: 0;
+  color: black;
 }
 
 .icon-score {
@@ -745,11 +750,6 @@ li {
 }
 /*responsive desktop large screen*/
 @media (min-width: 800px) and (max-width: 1440px) {
-  .logo-header,
-.logo-header-menu {
-    font-size: 60px;
-  }
-
   .icon {
     font-size: 40px;
     margin-right: 3%;
@@ -825,6 +825,11 @@ li {
     height: 500px;
   }
 
+  .center {
+    text-align: center;
+    font-size: 25px;
+  }
+
   #restaurants-list {
     display: grid;
     grid-template-columns: 40% 40%;
@@ -859,8 +864,8 @@ li {
     padding: 0;
   }
 
-  .logo-footer {
-    font-size: 50px;
+  #logo .logo-footer {
+    font-size: 45px;
     margin-top: 5px;
     display: flex;
     justify-content: center;
@@ -914,10 +919,17 @@ li {
     width: 225px;
   }
 
-  .logo-header,
-.logo-header-menu,
-.menu-title {
+  .menu-name {
+    width: 75%;
+  }
+
+  .logo-header {
     font-size: 50px;
+  }
+
+  .logo-header-menu,
+.menu-title {
+    justify-content: center;
   }
 
   .header-button button {
@@ -963,6 +975,11 @@ li {
 
   .plat-part button {
     width: 400px;
+  }
+
+  .center {
+    text-align: center;
+    font-size: 40px;
   }
 
   #restaurants-list {
@@ -1026,8 +1043,30 @@ li {
     padding: 0;
   }
 
-  .logo-footer {
+  .logo-header {
     font-size: 50px;
+  }
+
+  .menu-name {
+    width: 70%;
+  }
+
+  .explorer button {
+    width: 300px;
+  }
+
+  .button-commander button {
+    width: 25%;
+  }
+
+  .menu-title {
+    font-size: 45px;
+    justify-content: center;
+    padding-right: 10%;
+  }
+
+  #logo .logo-footer {
+    font-size: 45px;
     margin-top: 5px;
     display: flex;
     justify-content: center;
