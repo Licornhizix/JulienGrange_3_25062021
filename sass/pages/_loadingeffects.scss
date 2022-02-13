@@ -1,0 +1,48 @@
+/*Spinner and loader*/
+.loader {
+	position: fixed;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 10000;
+	-webkit-animation: hide-spinner 3s 1;
+	animation: hide-spinner 3s 1;
+	visibility: hidden;
+	width: 100%;
+	.loader-circle {
+		border: 10px solid $purple-hearnnumber;
+		border-top: 10px solid blue;
+		border-bottom: 10px solid #ff79da;
+		border-radius: 50%;
+		width: 100px;
+		height: 100px;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		-webkit-animation: spin linear 1.5s 2;
+		animation: spin linear 1.5s 2;
+		margin: auto;
+		position: absolute;
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes hide-spinner {
+	0% {
+		visibility: visible;
+	}
+	100% {
+		visibility: hidden;
+	}
+}
+.button-apear, .button-apear2, .button-apear3 {
+	@include dishesapeareffect;
+}

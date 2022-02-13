@@ -1,0 +1,18 @@
+/* Titles settings of menus*/
+
+.menu-name {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.menu-title {
+	display: block;
+	width: 100%;
+    font-family: $logofont;
+    justify-content: flex-start;
+}
+
+

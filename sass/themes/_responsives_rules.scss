@@ -1,0 +1,460 @@
+/*responsive iphone5/SE*/
+
+@media (max-width: 320px) {
+	.header-button {
+		padding-bottom: 40px;
+	}
+
+	.header-button {
+		padding-top: 20px;
+	}
+
+	.plat-info h3 {
+		font-size: 16px;
+	}
+
+	.nouveau {
+		left: 72%;
+	}
+	.plat-type {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+/*responsive iphone6+*/
+@media (max-width: 600px) {
+	.header-bottom > h2 {
+		display: flex;
+		justify-content: center;
+	}
+
+	.plat-type {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+/*responsive tablette*/
+@media (min-width: 600px) and (max-width: 800px) {
+	#restaurants-list {
+		display: grid;
+		grid-template-columns: 40% 40%;
+		grid-template-rows: 40% 40%;
+		grid-gap: 15%;
+		margin-left: 5%;
+		padding-bottom: 20%;
+	}
+
+	.nouveau {
+		left: 60%;
+	}
+
+	.fonctionnement__section {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.fonction-button button {
+		width: 100%;
+		font-size: 17px;
+		margin: 8%;
+	}
+
+	.fonctionnement__section button:hover {
+		height: 70px;
+		width: 100%;
+	}
+
+	#restaurants h2 {
+		text-align: center;
+	}
+
+	.header-bottom h2 {
+		display: flex;
+		justify-content: center;
+	}
+
+	.explorer {
+		padding-bottom: 3%;
+		padding-top: 8px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.explorer button {
+		width: 200px;
+	}
+
+	.center {
+		text-align: center;
+	}
+	
+
+	ul,
+	li {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 0;
+		margin-left: 3%;
+	}
+
+	.fonction-number {
+		right: 92%;
+	}
+	#footer-content {
+		width: 98%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	ul,
+	li {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 0;
+	}
+	#logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#logo .logo-footer {
+		margin: 0;
+		font-size: 30px;	}
+
+	
+}
+
+/*responsive desktop large screen*/
+@media (min-width: 800px) and (max-width: 1440px) {
+	
+	.icon {
+		font-size: 40px;
+		margin-right: 3%;
+	}
+
+	p {
+		display: flex;
+		justify-content: center;
+		font-size: 25px;
+	}
+
+	.header-bottom h2 {
+		display: flex;
+		justify-content: center;
+		font-size: 25px;
+	}
+
+	.header-top span {
+		font-size: 25px;
+	}
+
+	.fa-arrow-left {
+		font-size: 27px;
+	}
+
+	div .header-button {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 5%;
+	}
+	.header-button button {
+		width: 40%;
+	}
+
+	div .fonction-button {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 40px;
+	}
+
+	.fonctionnement__section {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.fonction-button button {
+		width: 70%;
+		font-size: 17px;
+	}
+
+	.fonctionnement__section button:hover {
+		height: 70px;
+		width: 70%;
+	}
+
+	.fonction-number {
+		right: 82%;
+	}
+
+	img {
+		height: 200px;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+		object-fit: cover;
+	}
+
+	header > img {
+		height: 500px;
+	}
+	.center {
+		
+		font-size: 25px;
+		text-align: center;
+	}
+	#restaurants-list {
+		display: grid;
+		grid-template-columns: 40% 40%;
+		grid-template-rows: 40% 40%;
+		grid-gap: 10%;
+		margin-left: 10%;
+		padding-bottom: 20%;
+	}
+	.nouveau {
+		left: 70%;
+	}
+
+	footer {
+		display: flex;
+		justify-content: center;
+		font-size: 25px;
+	}
+
+	#footer-content {
+		width: 98%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	ul,
+	li {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 0;
+	}
+
+	#logo .logo-footer {
+		font-size: 45px;
+		margin-top: 5px;
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+	}
+
+	.plat-part{
+		margin: 1%;
+		width: 250px;
+		
+	}
+
+	.plat-part .button{
+		height: 150px;
+		width: 250px;
+	}
+
+	.plat-part .button:hover {
+		height: 150px;
+		width: 250px;
+	}
+	
+	.plat-info .plat-titre {
+		margin-bottom: 10px;
+		text-align: left;
+	}
+	
+	.plat-part button .plat-price {
+		top: 55%;
+	}
+	
+	.plat-type {
+		display: flex;
+		flex-direction: row;
+		
+	}
+
+	.menu-name{
+		width: 75%;
+		margin-left: 10%;
+	}
+.logo-header{
+
+	font-size: 50px;
+}
+	
+
+	.logo-header-menu{
+		justify-content: center;
+	}
+
+	.menu-title {
+		justify-content: flex-start;	
+	}
+	
+	.header-button button {
+		width: 40%;
+		font-size: 25px;
+	}
+
+	.header-button {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin: 5px;
+	}
+
+	.explorer button {
+		width: 400px;
+	}
+}
+
+/*responsive desktop large screen*/
+@media (min-width: 1440px) and (max-width: 1950px) {
+	.header-button {
+		padding-bottom: 2%;
+	}
+
+	p {
+		display: flex;
+		justify-content: center;
+		font-size: 25px;
+	}
+
+	.header-bottom h2 {
+		display: flex;
+		justify-content: center;
+		font-size: 25px;
+	}
+
+	.center {
+		
+		font-size: 40px;
+		text-align: center;
+	}
+	#restaurants-list {
+		display: grid;
+		grid-gap: 10%;
+		grid-template-columns: 45% 45%;
+		grid-template-rows: 45% 45%;
+		margin-left: 3%;
+		margin-right: 3%;
+		padding-bottom: 5%;
+	}
+
+	.fonctionnement__section {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-content: center;
+	}
+
+	.fonction-button {
+		padding-bottom: 5%;
+	}
+
+	.fonction-button button {
+		width: 300px;
+		font-size: 17px;
+	}
+
+	.fonctionnement__section button:hover {
+		height: 70px;
+		width: 300px;
+	}
+
+	.fonction-number {
+		right: 95%;
+	}
+
+	footer {
+		display: flex;
+		justify-content: center;
+		font-size: 25px;
+	}
+
+	#footer-content {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	ul,
+	li {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding: 0;
+	}
+	.logo-header{
+
+		font-size: 50px;
+	}
+	.menu-name{
+		width: 70%;
+	}
+
+	.explorer button {
+		width: 300px;
+	}
+
+	.button-commander button{
+		
+		width: 25%;
+	}
+	
+	.menu-title {
+		font-size: 45px;
+		justify-content: center;
+		padding-right: 10%;
+		
+		
+	}
+
+	#logo .logo-footer {
+		font-size: 45px;
+		margin-top: 5px;
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+	}
+
+
+	.plat-type {
+		display: flex;
+		flex-direction: row;
+	}
+	.plat-part{
+		margin-left: 1%;
+	}
+
+	.plat-part button {
+		height: 100px;
+		width: 300px;
+	}
+
+	.plat-part  button:hover {
+		height: 100px;
+		width: 300px;
+	}
+
+	.fonction-text {
+		font-size: 20px;
+	}
+	.nouveau {
+		left: 80%;
+	}
+}
