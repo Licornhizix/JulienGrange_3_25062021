@@ -217,6 +217,7 @@ header .header-bottom {
   background-image: linear-gradient(to top, #ededec, white);
   display: block;
   text-align: center;
+  margin-top: 2%;
 }
 header .menu-name {
   width: 75%;
@@ -240,8 +241,6 @@ h2 {
   font-weight: 900;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 button {
@@ -252,7 +251,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   position: relative;
 }
 
@@ -362,6 +361,13 @@ main .restaurants-info a {
   position: relative;
 }
 
+.center {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  display: block;
+  text-align: left;
+}
+
 h4 {
   font-size: 16px;
   margin-top: 3px;
@@ -434,7 +440,7 @@ article {
   width: 70%;
   transition: 1.5s;
 }
-.plat-info h3, .plat-info h4 {
+.plat-info .plat-titre, .plat-info .plat-ingredient {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -452,28 +458,11 @@ article {
   content: "";
   display: block;
   background-color: #99e2d0;
-  width: 4rem;
+  width: 3rem;
   height: 0.2rem;
   left: 0;
-  top: 70%;
+  top: 80%;
   position: absolute;
-}
-@-moz-document url-prefix() {
-  .plat-part .underline {
-    position: relative;
-  }
-}
-@-moz-document url-prefix() {
-  .plat-part .underline::after {
-    content: "";
-    display: block;
-    background-color: #99e2d0;
-    width: 4rem;
-    height: 0.2rem;
-    left: 0;
-    top: 70%;
-    position: absolute;
-  }
 }
 .plat-part button:hover .plat-price {
   display: flex;
@@ -488,10 +477,8 @@ article {
   border-radius: 20px;
   height: 70px;
   width: 100%;
-  font-size: 16px;
   box-shadow: 0px 2px 10px 1px lightgrey;
   border: none;
-  font-weight: 500;
   margin-bottom: 5%;
   display: flex;
   align-items: center;
@@ -508,16 +495,24 @@ article {
   box-shadow: 0px 2px 10px 3px lightgrey;
   transition: 1.5s;
 }
+.plat-part button .plat-info .plat-titre {
+  font-size: 16px;
+  font-weight: 600;
+}
+.plat-part button .plat-info .plat-ingredient {
+  font-size: 14px;
+}
 .plat-part button .plat-price {
   align-items: flex-end;
   justify-content: flex-end;
   position: absolute;
   transition: 1.5s;
   left: 85%;
-  top: 45%;
+  top: 55%;
 }
-.plat-part button .plat-price h4 {
+.plat-part button .plat-price span {
   font-weight: 600;
+  font-size: 14px;
 }
 .plat-part button .check {
   display: flex;
@@ -664,7 +659,7 @@ header > img {
   }
 
   .nouveau {
-    left: 70%;
+    left: 60%;
   }
 
   .fonctionnement__section {
@@ -834,8 +829,8 @@ li {
   }
 
   .center {
-    text-align: center;
     font-size: 25px;
+    text-align: center;
   }
 
   #restaurants-list {
@@ -881,34 +876,48 @@ li {
   }
 
   .plat-part {
-    margin: 2%;
+    margin: 1%;
+    width: 250px;
   }
 
-  .plat-part > button:hover {
+  .plat-part .button {
     height: 150px;
-    width: 225px;
+    width: 250px;
   }
 
-  .plat-info h3 {
-    font-size: 20px;
+  .plat-part .button:hover {
+    height: 150px;
+    width: 250px;
+  }
+
+  /*background-color: white;
+  	border-radius: 20px;
+  	height: 70px;
+  	width: 100%;
+  	box-shadow: 0px 2px 10px 1px lightgrey;
+  	border: none;
+  	margin-bottom: 5%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+  	position: relative;
+  	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+  	flex: 1;
+  	&:hover {
+  		background-color: #fdeeff;
+  		cursor: pointer;
+  		box-shadow: 0px 2px 10px 3px lightgrey;
+  		transition: 1.5s;
+  	}*/
+  .plat-info .plat-titre {
     margin-bottom: 10px;
     text-align: left;
   }
 
-  .plat-view h4 {
-    font-size: 20px;
-  }
-
   .plat-part button .plat-price {
     top: 55%;
-  }
-
-  h4 {
-    font-size: 18px;
-  }
-
-  .plat-price h4 {
-    font-size: 15px;
   }
 
   .plat-type {
@@ -916,27 +925,21 @@ li {
     flex-direction: row;
   }
 
-  .plat-type button {
-    height: 150px;
-    width: 225px;
-  }
-
-  .plat-type > button:hover {
-    height: 150px;
-    width: 225px;
-  }
-
   .menu-name {
     width: 75%;
+    margin-left: 10%;
   }
 
   .logo-header {
     font-size: 50px;
   }
 
-  .logo-header-menu,
-.menu-title {
+  .logo-header-menu {
     justify-content: center;
+  }
+
+  .menu-title {
+    justify-content: flex-start;
   }
 
   .header-button button {
@@ -948,10 +951,6 @@ li {
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 5px;
-  }
-
-  .explorer {
-    margin-top: none;
   }
 
   .explorer button {
@@ -976,17 +975,9 @@ li {
     font-size: 25px;
   }
 
-  .plat-part {
-    width: 400px;
-  }
-
-  .plat-part button {
-    width: 400px;
-  }
-
   .center {
-    text-align: center;
     font-size: 40px;
+    text-align: center;
   }
 
   #restaurants-list {
@@ -1030,11 +1021,6 @@ li {
     font-size: 25px;
   }
 
-  @-moz-document url-prefix() {
-    #footer-content {
-      margin-top: 20px;
-    }
-  }
   #footer-content {
     width: 100%;
     display: flex;
@@ -1086,13 +1072,17 @@ li {
     flex-direction: row;
   }
 
+  .plat-part {
+    margin-left: 1%;
+  }
+
   .plat-part button {
-    height: 150px;
+    height: 100px;
     width: 300px;
   }
 
-  .plat-part > button:hover {
-    height: 150px;
+  .plat-part button:hover {
+    height: 100px;
     width: 300px;
   }
 
