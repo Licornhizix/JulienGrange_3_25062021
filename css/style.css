@@ -334,11 +334,13 @@ button {
   text-align: start;
 }
 
-.plat-part .menu-part h2 {
+.plat-part .menu-part {
   line-height: 180%;
 }
 .plat-part .underline {
   position: relative;
+  font-size: 20px;
+  font-weight: 900;
 }
 .plat-part .underline::after {
   content: "";
@@ -581,6 +583,7 @@ h2 {
   width: 100%;
   font-family: "Shrikhand", cursive;
   justify-content: flex-start;
+  font-size: 20px;
 }
 
 /*Images settings*/

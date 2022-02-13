@@ -253,11 +253,13 @@ button{
 
 .plat-part {
 
-	.menu-part h2 {
+	.menu-part  {
 		line-height: 180%;
 	}
 	.underline {
 		position: relative;
+		font-size: 20px;
+		font-weight: 900;
 	}
 	.underline::after {
 		content: "";
