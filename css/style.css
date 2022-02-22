@@ -1,12 +1,10 @@
 @charset "UTF-8";
-
 header {
   display: flex;
   flex-direction: column;
   justify-items: flex-start;
   position: relative;
 }
-
 header .localisation {
   background-image: linear-gradient(to top, #E9E9E9, #EAEAEA, #EAEAEA, #EAEAEA, #EAEAEA, #EAEAEA, #EAEAEA, #EAEAEA, #D4D4D4);
   display: flex;
@@ -15,14 +13,12 @@ header .localisation {
   font-weight: bolder;
   padding: 15px;
 }
-
 header .header-top-menu {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-
 header .header-top-menu a {
   display: flex;
   justify-items: flex-start;
@@ -33,11 +29,9 @@ header .header-top-menu a {
   color: black;
   margin-left: 2%;
 }
-
 header .header-top-menu a .fa-arrow-left {
   font-size: 15px;
 }
-
 header::before {
   content: "";
   position: absolute;
@@ -48,7 +42,6 @@ header::before {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
-
 header .logo-header,
 header .logo-header-menu {
   font-family: "Shrikhand", cursive;
@@ -61,14 +54,12 @@ header .logo-header-menu {
   font-size: 25px;
   font-weight: lighter;
 }
-
 header .header-bottom {
   background-image: linear-gradient(to top, #ededec, white);
   display: block;
   text-align: center;
   margin-top: 2%;
 }
-
 header .menu-name {
   width: 75%;
 }
@@ -76,7 +67,6 @@ header .menu-name {
 .header-top {
   width: 100%;
 }
-
 .header-top .header-bottom p {
   color: gray;
   font-size: 18px;
@@ -92,13 +82,11 @@ footer {
   padding-top: 3%;
   margin-top: 0;
 }
-
 footer .footer-content {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
-
 footer .logo-footer {
   font-family: "Shrikhand", cursive;
   font-size: 20px;
@@ -107,19 +95,15 @@ footer .logo-footer {
   justify-content: flex-start;
   margin-left: 13%;
 }
-
 footer .fa-utensils {
   padding-right: 4%;
 }
-
 footer .fa-hands-helping {
   padding-right: 2%;
 }
-
 footer ul {
   list-style: none;
 }
-
 footer a {
   text-decoration: none;
   color: white;
@@ -147,7 +131,6 @@ div .like-btn {
   font-size: 25px;
   cursor: pointer;
 }
-
 div .like-btn .fa-heart {
   position: relative;
   font-size: 25px;
@@ -155,7 +138,6 @@ div .like-btn .fa-heart {
   -webkit-text-stroke: 1px black;
   font-size: 25px;
 }
-
 div .like-btn .fa-heart:hover {
   background: linear-gradient(to bottom, #A75DDC, #DE6EDA);
   background-clip: text;
@@ -165,76 +147,65 @@ div .like-btn .fa-heart:hover {
   -webkit-text-stroke: 0px #5c2f2f;
   animation: blink 1.5s 1;
 }
-
 @keyframes blink {
   0% {
     background: transparent;
     opacity: 0;
   }
-
   10% {
     background: linear-gradient(to bottom, #A75DDC, #DE6EDA);
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0;
   }
-
   20% {
     background: linear-gradient(to bottom, #A75DDC, #DE6EDA);
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0.1;
   }
-
   30% {
     background: linear-gradient(to bottom, #A75DDC, #DE6EDA);
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0.1;
   }
-
   40% {
     background: linear-gradient(to bottom, #A75DDC, #DE6EDA);
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0.2;
   }
-
   50% {
     background: linear-gradient(to bottom, #A75DDC, #DE6EDA);
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0.3;
   }
-
   60% {
     background: linear-gradient(to bottom, #A75DDC, #DE6EDA);
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0.5;
   }
-
   70% {
     background: linear-gradient(to bottom, #A75DDC, #DE6EDA);
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0.7;
   }
-
   80% {
     background: linear-gradient(to bottom, #A75DDC, #DE6EDA);
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0.8;
   }
-
   90% {
     background: linear-gradient(to bottom, #A75DDC, #DE6EDA);
     background-clip: text;
     -webkit-background-clip: text;
     opacity: 0.9;
   }
-
   100% {
     background: linear-gradient(to bottom, #A75DDC, #DE6EDA);
     background-clip: text;
@@ -259,7 +230,6 @@ div .like-btn .fa-heart:hover {
   box-shadow: 5px 2px 15px 6px #C9C9C9;
   font-weight: 600;
 }
-
 .header-button button:hover {
   color: #deebff;
   cursor: pointer;
@@ -294,7 +264,6 @@ div .like-btn .fa-heart:hover {
   justify-content: center;
   align-items: center;
 }
-
 .fonctionnement__section button:hover {
   background-color: #F5EDFF;
   cursor: pointer;
@@ -302,7 +271,6 @@ div .like-btn .fa-heart:hover {
   box-shadow: 0px 2px 15px 3px lightgrey;
   transition: 0.5s;
 }
-
 .fonctionnement__section button:hover .fonction-icon {
   color: #9356DC;
   transition: 0.5s ease-in-out;
@@ -345,121 +313,94 @@ div .like-btn .fa-heart:hover {
     opacity: 0;
     visibility: hidden;
   }
-
   10% {
     opacity: 0;
     visibility: hidden;
   }
-
   20% {
     opacity: 0.1;
   }
-
   30% {
     opacity: 0.25;
   }
-
   40% {
     opacity: 0.4;
   }
-
   60% {
     opacity: 0.5;
   }
-
   75% {
     opacity: 0.65;
   }
-
   90% {
     opacity: 0.85;
   }
-
   100% {
     opacity: 1;
   }
 }
-
 @keyframes button-apear2 {
   0% {
     opacity: 0;
     visibility: hidden;
   }
-
   10% {
     opacity: 0;
     visibility: hidden;
   }
-
   20% {
     opacity: 0;
   }
-
   30% {
     opacity: 0;
   }
-
   40% {
     opacity: 0.3;
   }
-
   60% {
     opacity: 0.5;
   }
-
   75% {
     opacity: 0.65;
   }
-
   90% {
     opacity: 0.85;
   }
-
   100% {
     opacity: 1;
   }
 }
-
 @keyframes button-apear3 {
   0% {
     opacity: 0;
     visibility: hidden;
   }
-
   10% {
     opacity: 0;
     visibility: hidden;
   }
-
   20% {
     opacity: 0;
   }
-
   30% {
     opacity: 0;
   }
-
   40% {
     opacity: 0.1;
   }
-
   60% {
     opacity: 0.3;
   }
-
   75% {
     opacity: 0.65;
   }
-
   90% {
     opacity: 0.85;
   }
-
   100% {
     opacity: 1;
   }
 }
-
 /*Entrées Plats Desserts*/
 .plat-type {
   display: flex;
@@ -475,12 +416,10 @@ div .like-btn .fa-heart:hover {
   align-items: flex-start;
   width: 90%;
 }
-
 .plat-info:hover {
   width: 70%;
   transition: 1.5s;
 }
-
 .plat-info .plat-titre,
 .plat-info .plat-ingredient {
   white-space: nowrap;
@@ -494,7 +433,6 @@ div .like-btn .fa-heart:hover {
   width: 95%;
   margin-bottom: 5%;
 }
-
 .plat-part .menu-part {
   width: 90%;
   display: flex;
@@ -504,13 +442,11 @@ div .like-btn .fa-heart:hover {
   margin-bottom: 5%;
   line-height: 180%;
 }
-
 .plat-part .underline {
   position: relative;
   font-size: 20px;
   font-weight: 900;
 }
-
 .plat-part .underline::after {
   content: "";
   display: block;
@@ -521,7 +457,6 @@ div .like-btn .fa-heart:hover {
   top: 80%;
   position: absolute;
 }
-
 .plat-part button:hover .plat-price {
   display: flex;
   align-items: flex-end;
@@ -530,7 +465,6 @@ div .like-btn .fa-heart:hover {
   transition: 1.5s;
   left: 70%;
 }
-
 .plat-part button {
   background-color: white;
   border-radius: 20px;
@@ -548,23 +482,19 @@ div .like-btn .fa-heart:hover {
   text-overflow: ellipsis;
   flex: 1;
 }
-
 .plat-part button:hover {
   background-color: #fdeeff;
   cursor: pointer;
   box-shadow: 0px 2px 10px 3px lightgrey;
   transition: 1.5s;
 }
-
 .plat-part button .plat-info .plat-titre {
   font-size: 16px;
   font-weight: 600;
 }
-
 .plat-part button .plat-info .plat-ingredient {
   font-size: 14px;
 }
-
 .plat-part button .plat-price {
   align-items: flex-end;
   justify-content: flex-end;
@@ -573,12 +503,10 @@ div .like-btn .fa-heart:hover {
   left: 85%;
   top: 55%;
 }
-
 .plat-part button .plat-price span {
   font-weight: 600;
   font-size: 14px;
 }
-
 .plat-part button .check {
   display: flex;
   align-items: center;
@@ -589,8 +517,7 @@ div .like-btn .fa-heart:hover {
   width: 0;
   height: 100%;
 }
-
-.plat-part>button .check i {
+.plat-part > button .check i {
   left: 100%;
   top: 0;
   width: 0;
@@ -599,8 +526,7 @@ div .like-btn .fa-heart:hover {
   transition-duration: 0.8s;
   transition-property: transform;
 }
-
-.plat-part>button:hover .check {
+.plat-part > button:hover .check {
   position: absolute;
   width: 20%;
   left: 80%;
@@ -609,8 +535,7 @@ div .like-btn .fa-heart:hover {
   border-bottom-right-radius: 20px;
   transition: 1.5s;
 }
-
-.plat-part>button:hover .check i {
+.plat-part > button:hover .check i {
   color: #99e2d0;
   border-radius: 50%;
   background-color: white;
@@ -634,7 +559,6 @@ div .like-btn .fa-heart:hover {
   visibility: hidden;
   width: 100%;
 }
-
 .loader .loader-circle {
   border: 10px solid #9356DC;
   border-top: 10px solid blue;
@@ -656,22 +580,18 @@ div .like-btn .fa-heart:hover {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
 }
-
 @keyframes hide-spinner {
   0% {
     visibility: visible;
   }
-
   100% {
     visibility: hidden;
   }
 }
-
 /*Main*/
 main {
   background-color: #ededec;
@@ -746,7 +666,6 @@ article {
   border-bottom-right-radius: 15px;
   box-shadow: 0px 2px 10px 1px #E7E7E7;
 }
-
 article a {
   color: black;
   text-decoration: none;
@@ -798,7 +717,7 @@ img {
   object-fit: cover;
 }
 
-header>img {
+header > img {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -826,10 +745,9 @@ header>img {
     flex-direction: column;
   }
 }
-
 /*responsive iphone6+*/
 @media (max-width: 600px) {
-  .header-bottom>h2 {
+  .header-bottom > h2 {
     display: flex;
     justify-content: center;
   }
@@ -839,7 +757,6 @@ header>img {
     flex-direction: column;
   }
 }
-
 /*responsive tablette*/
 @media (min-width: 600px) and (max-width: 800px) {
   .restaurants-list {
@@ -896,12 +813,11 @@ header>img {
   }
 
   ul,
-  li {
+li {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 95%;
     padding: 0;
-    margin-left: 3%;
   }
 
   .fonction-number {
@@ -915,14 +831,6 @@ header>img {
     flex-direction: column;
   }
 
-  ul,
-  li {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 0;
-  }
-
   #logo {
     display: flex;
     justify-content: center;
@@ -934,7 +842,6 @@ header>img {
     font-size: 30px;
   }
 }
-
 /*responsive desktop large screen*/
 @media (min-width: 800px) and (max-width: 1440px) {
   .icon {
@@ -963,7 +870,6 @@ header>img {
   }
 
   div .header-button {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1008,7 +914,7 @@ header>img {
     object-fit: cover;
   }
 
-  header>img {
+  header > img {
     height: 500px;
   }
 
@@ -1032,7 +938,7 @@ header>img {
   footer {
     display: flex;
     justify-content: center;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   #footer-content {
@@ -1043,10 +949,10 @@ header>img {
   }
 
   ul,
-  li {
+li {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 95%;
     padding: 0;
   }
 
@@ -1122,7 +1028,6 @@ header>img {
     width: 400px;
   }
 }
-
 /*responsive desktop large screen*/
 @media (min-width: 1440px) {
   .header-button {
@@ -1184,7 +1089,7 @@ header>img {
   footer {
     display: flex;
     justify-content: center;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   #footer-content {
@@ -1195,10 +1100,10 @@ header>img {
   }
 
   ul,
-  li {
+li {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 95%;
     padding: 0;
   }
 
@@ -1263,7 +1168,6 @@ header>img {
     left: 80%;
   }
 }
-
 /*Fonts style on the page*/
 body {
   font-family: "Roboto", sans-serif;
