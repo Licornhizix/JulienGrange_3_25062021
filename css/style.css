@@ -229,6 +229,7 @@ div .like-btn .fa-heart:hover {
   align-items: center;
   box-shadow: 5px 2px 15px 6px #C9C9C9;
   font-weight: 600;
+  font-family: "roboto", sans serif;
 }
 .header-button button:hover {
   color: #deebff;
@@ -283,6 +284,7 @@ div .like-btn .fa-heart:hover {
 .fonction-text {
   font-size: 12px;
   font-weight: 600;
+  font-family: "roboto", sans serif;
 }
 
 .fonction-number {
@@ -306,6 +308,7 @@ div .like-btn .fa-heart:hover {
 .button-apear3 {
   animation: button-apear 3s 1;
   animation-delay: 0s;
+  font-family: "roboto", sans serif;
 }
 
 @keyframes button-apear {
