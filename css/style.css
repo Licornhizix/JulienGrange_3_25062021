@@ -468,6 +468,14 @@ div .like-btn .fa-heart:hover {
   transition: 1.5s;
   left: 70%;
 }
+.plat-part button:hover .plat-info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: absolute;
+  transition: 1.5s;
+  width: 60%;
+}
 .plat-part button {
   background-color: white;
   border-radius: 20px;
@@ -484,12 +492,6 @@ div .like-btn .fa-heart:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   flex: 1;
-}
-.plat-part button:hover {
-  background-color: #FFFFFF;
-  cursor: pointer;
-  box-shadow: 0px 2px 10px 3px lightgrey;
-  transition: 1.5s;
 }
 .plat-part button .plat-info .plat-titre {
   font-size: 16px;

@@ -428,6 +428,17 @@ div .like-btn {
 		left: 70%;
 	}
 
+	button:hover .plat-info {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+		position: absolute;
+		transition: 1.5s;
+		width: 60%;
+
+	}
+
+
 	button {
 		background-color: white;
 		border-radius: 20px;
@@ -445,12 +456,7 @@ div .like-btn {
 		text-overflow: ellipsis;
 		flex: 1;
 
-		&:hover {
-			background-color: #FFFFFF;
-			cursor: pointer;
-			box-shadow: 0px 2px 10px 3px lightgrey;
-			transition: 1.5s;
-		}
+
 
 		.plat-info .plat-titre {
 			font-size: 16px;
